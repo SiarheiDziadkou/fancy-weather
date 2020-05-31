@@ -1,0 +1,264 @@
+//compress
+html {
+    margin: 0;
+    font-size: 10px;
+}
+body {
+    margin: 0   ;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+    background-image: url();
+}
+
+.header {
+    min-height: 8rem;
+    display: flex;
+}
+
+.buttons-area {
+    width: 50%;
+    text-align: center;
+}
+
+.search-area {
+    width: 50%;
+    text-align: center;
+}
+
+.buttons-panel {
+    display: inline-flex;
+    margin-top: 1.5rem;
+    
+}
+
+.buttons-panel div {
+    margin-right: 0.5rem;
+}
+
+.search-panel {
+    width: 15rem;
+    height: 3rem;
+    display: inline-flex;
+    margin-top: 1.5rem;
+}
+
+.form-control {
+    width: 15rem;
+    height: 4rem;
+    background-color: rgba(180,184,187,.7);
+    
+}
+
+#search-button {
+    width: 8rem;
+}
+
+.content-wraper {
+    
+    display: flex;
+}
+
+.weather-colum {
+    width: 50%;
+}
+
+.map-colum {
+    width: 50%;
+    position: relative;
+}
+
+.current-weather {
+    margin: 2rem 0 2rem 2rem;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+
+.current-weather h1 {
+    justify-content: center;
+}
+
+.date-time {
+    display: flex;
+    align-content: space-around;
+}
+
+.degrees-icon {
+    display: flex;
+}
+
+#current-temperature {
+    width: 15rem;
+    height: 15rem;
+    font-size: 1000%;
+}
+
+#current-icon {
+    width: 15rem;
+    height: 15rem;
+}
+
+.wether-icon {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.weather-discription {
+    margin: 1rem;
+}
+
+.future-weather {
+    display: flex;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+
+.future-block {
+    width: 10rem;
+    height: 7rem;
+    margin-left: 3rem;
+    
+}
+
+.flex-wraper {
+    display: flex;
+}
+
+.flex-wraper div {
+    width: 5rem;
+    height: 5rem;
+}
+
+.show-degrees {
+    font-size: 250%;
+}
+
+#date-time {
+    width: 30rem;
+    height: 2rem;
+    overflow: hidden;
+}
+
+.button {
+    width: 4rem;
+    height: 4rem;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: .5rem;
+    background: rgba(180,184,187,.7);
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-transition: all .2s;
+    transition: all .2s
+}
+
+.button:hover {
+    background-color: #b4b8bb;
+    color: black;
+}
+
+.button--update {
+    background: rgba(180,184,187,.7) url(img/update-button.svg) no-repeat bottom;
+    background-size: 4.4rem
+}
+
+.spinner {
+    width: 2rem;
+    height: 2rem;
+    background: url(../images/spinner.svg) 50% no-repeat;
+    -webkit-animation: spin 1.4s ease-in-out;
+    animation: spin 1.4s ease-in-out
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: rgba(0, 0, 255, 0);
+    background-clip: padding-box;
+    border: 0;
+    border-radius: 1px;
+}
+
+.dropdown-menu {
+    margin-top: 0.1rem;
+}
+
+.dropdown-item {
+    margin-top: 0.1rem;
+}
+
+#map { 
+    position: relative;
+    margin: 2.5rem 2.5rem 0 2.5rem;
+    bottom: 0;
+    width: 90%;
+    height: 80%;
+    border-radius: 1.5rem;
+}
+
+.coordinates-area {
+    padding: 2.5rem 0 0 2.5rem;
+    color: #ffff;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .header {
+        height: 25%;
+        flex-direction: column;
+    }
+    .buttons-area {
+        width: 100%;
+        height: 8rem;
+    }
+    
+    .search-area {
+        width: 100%;
+        height: 8rem;
+    }
+
+    .content-wraper {
+        height: 85%;
+        flex-direction: column;
+    }
+    .weather-colum {
+        width: 100%;
+    }
+    
+    .map-colum {
+        width: 100%;
+        height: 50rem;
+    }
+
+    #map { 
+        margin: 2.5rem 1rem 0 1rem;
+    }
+
+    .form-control {
+        width: 12rem;
+    }
+
+    .future-weather {
+        flex-direction: column;
+    }
+  }
+
